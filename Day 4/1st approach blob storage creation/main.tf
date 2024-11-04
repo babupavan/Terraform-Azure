@@ -2,10 +2,10 @@
 provider "azurerm" {
   features {}
 
-  subscription_id = "bb184f3a-dc96-4ced-b2d8-b3218b005b2b"
-  client_id       = "aaf55c86-9598-4a4a-a587-1943da63676b"
+  subscription_id = "************************************"
+  client_id       = "************************************"
   client_secret   = var.client_secret  # Reference variable for sensitive data
-  tenant_id       = "9731a166-8da3-44c9-bf7c-8e68bf9465df"
+  tenant_id       = "************************************"
 }
 
 # Variable for sensitive client secret
