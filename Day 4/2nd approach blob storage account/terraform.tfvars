@@ -1,0 +1,10 @@
+subscription_id = "************************************"
+client_id       = "************************************"
+client_secret   = "************************************"  # Consider using a variable or environment variable
+tenant_id       = "************************************"
+resource_group_name = "my-resource-group"
+location            = "East US"
+storage_account_name = "uniqueacctname123"  # Must be globally unique
+container_name       = "mycontainer"
+blob_name            = "azure.txt"
+file_path            = "C:\\Users\\latha_paladugu\\Documents\\azure.txt"
