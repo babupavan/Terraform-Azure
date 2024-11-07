@@ -1,36 +1,36 @@
 variable "resource_group_name" {
-  type = string
-  default = "resource group for resources"
+  type    = string
+  default = "demo-rg"  # Update with a valid RG name
 }
 
 variable "location" {
-  type = string
-  default = "location for the resources"
+  type    = string
+  default = "Central India"  # Update with your desired Azure region
 }
 
 variable "vnet_name" {
-  type = string
-  default = "virtual network name "
+  type    = string
+  default = "MyVirtualNetwork"  # A valid virtual network name
 }
 
 variable "vnet_address_prefix" {
-  type = string
-  default = "address prefix for virtual network"
+  type    = string
+  default = "10.0.0.0/16"  # A valid CIDR block for the VNet
 }
 
 variable "subnet_name" {
-  type = string
-  default = "name of subnet"
+  type    = string
+  default = "MySubnet"  # A valid subnet name
 }
 
 variable "subnet_address_prefix" {
-  type = string
-  default = "address prefix for subnet "
+  type    = string
+  default = "10.0.1.0/24"  # A valid CIDR block for the Subnet
 }
 
 variable "nsg_name" {
-  type = string
-  default = "name of the nsg"
+  type    = string
+  default = "MyNSG"  # A valid NSG name
 }
 
 # Provider authentication variables
@@ -53,4 +53,10 @@ variable "client_secret" {
 variable "tenant_id" {
   description = "Azure tenant ID"
   type        = string
+}
+
+variable "subnet_prefix" {
+  description = "The address prefix for the subnet."
+  type        = string
+  default     = "10.0.1.0/24"  # A valid CIDR block for the Subnet
 }
